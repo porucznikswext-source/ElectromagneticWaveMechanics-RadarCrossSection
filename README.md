@@ -2,13 +2,6 @@
 Electromagnetic Wave Mechanics &amp; Radar Cross Section (RCS) Engine Calculates high-frequency monostatic RCS (dBsm) for arbitrary 3D planar facets using Physical Optics (Gordon Method) combined with edge diffraction approximations.
 
 ```
-
-"""
-Electromagnetic Wave Mechanics & Radar Cross Section (RCS) Engine
-Calculates high-frequency monostatic RCS (dBsm) for arbitrary 3D planar facets
-using Physical Optics (Gordon Method) combined with edge diffraction approximations.
-"""
-
 import numpy as np
 from dataclasses import dataclass
 from typing import List, Tuple
@@ -176,6 +169,5 @@ if __name__ == "__main__":
     print(f"Direct Nose Boresight (Az:   0.0 deg, El: 0.0 deg): {boresight_db:8.2f} dBsm ({boresight_lin:.6e} m^2)")
     print(f"Broadside Beam Aspect (Az:  90.0 deg, El: 0.0 deg): {beam_db:8.2f} dBsm ({beam_lin:.6e} m^2)")
     print(f"Leading Edge Normal   (Az:  53.1 deg, El: 0.0 deg): {specular_spike_db:8.2f} dBsm ({specular_spike_lin:.6e} m^2)")
-
 ```
 
